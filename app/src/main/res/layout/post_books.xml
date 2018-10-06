@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/post_book_img"
+        android:layout_marginTop="@dimen/dp_56"
+        android:src="@mipmap/post_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@id/post_book_img"
+        android:layout_marginTop="@dimen/dp_35"
+        android:paddingLeft="@dimen/dp_18"
+        android:paddingRight="@dimen/dp_22"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_3"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@drawable/circle"
+                android:layout_width="@dimen/dp_5"
+                android:layout_height="@dimen/dp_5"/>
+            <TextView
+                android:layout_marginLeft="@dimen/dp_8"
+                android:textSize="@dimen/dp_15"
+                android:text="扫码提示不收或在安排快递前线上审核显示拒绝的就是暂时不收。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_3"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@drawable/circle"
+                android:layout_width="@dimen/dp_5"
+                android:layout_height="@dimen/dp_5"/>
+            <TextView
+                android:layout_marginLeft="@dimen/dp_8"
+                android:textSize="@dimen/dp_15"
+                android:text="不收影响阅读的破损、污渍、老化异味的书。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_3"
+            android:layout_marginBottom="@dimen/dp_3"
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:background="@drawable/circle"
+                android:layout_width="@dimen/dp_5"
+                android:layout_height="@dimen/dp_5"/>
+            <TextView
+                android:layout_marginLeft="@dimen/dp_8"
+                android:textSize="@dimen/dp_15"
+                android:text="不收盗版、非卖品、非法出版物。"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/post_books_btn"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_10"
+        android:gravity="center"
+        android:background="@color/circle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40">
+        <ImageView
+            android:src="@mipmap/zxing"
+            android:layout_marginRight="@dimen/dp_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@color/colorwhite"
+            android:text="扫码发布"
+            android:textSize="@dimen/sp_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.PostActivity">
+
+    <RelativeLayout
+        android:paddingTop="@dimen/dp_5"
+        android:background="@color/colorwhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="发布宝贝"
+            android:gravity="center"
+            android:textSize="@dimen/sp_20"
+            android:textColor="@color/school_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <ImageView
+            android:id="@+id/post_back"
+            android:padding="@dimen/dp_5"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/left"
+            android:layout_width="@dimen/dp_35"
+            android:layout_height="@dimen/dp_35" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="@color/colorwhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/post_tablayout"
+        android:layout_marginTop="@dimen/dp_15"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_30"
+        app:tabTextAppearance="@style/TabLayoutTextStyle"
+        app:tabGravity="center"
+        app:tabMaxWidth="200dp"
+        app:tabMinWidth="20dp"
+        app:tabMode="fixed"
+        app:tabBackground="@color/colorwhite"
+        app:tabSelectedTextColor="@color/school_text"
+        app:tabTextColor="@color/search_text"
+        app:tabIndicatorColor="@color/tabtitle"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/post_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

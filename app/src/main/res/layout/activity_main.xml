@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:hjm="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity">
+    <!--<com.hjm.bottomtabbar.BottomTabBar
+        android:id="@+id/bottomtabbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        hjm:tab_bar_background="#FFFFFF"
+        hjm:tab_divider_background="#FF0000"
+        hjm:tab_divider_height="5dp"
+        hjm:tab_font_size="6sp"
+        hjm:tab_img_font_padding="0dp"
+        hjm:tab_img_height="30dp"
+        hjm:tab_img_width="30dp"
+        hjm:tab_isshow_divider="true"
+        hjm:tab_padding_bottom="5dp"
+        hjm:tab_padding_top="8dp"
+        hjm:tab_selected_color="#000000"
+        hjm:tab_unselected_color="@color/colorPrimary"/>
+    <android.support.design.widget.TabLayout
+        android:id="@+id/home_page_tablayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabBackground="@color/colorwhite"
+        app:tabMode="scrollable"
+        app:tabGravity="center"
+        app:tabIndicatorHeight="10px"
+        app:tabSelectedTextColor="@color/colorAccent"
+        app:tabTextColor="@color/colorblack"
+        app:tabIndicatorColor="@color/colorAccent"
+        />
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tab_vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+    <FrameLayout
+        android:layout_weight="1"
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#D3D3D3"
+        android:layout_height="@dimen/dp_1" />
+    <RadioGroup
+        android:clipChildren="false"
+        android:id="@+id/radiogroup"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/dp_5"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+        <RadioButton
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:checked="true"
+            android:layout_weight="1"
+            android:id="@+id/rd_home"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/select_home"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50" />
+        <RadioButton
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:id="@+id/rd_findfriend"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/select_findfriends"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50" />
+
+        <RadioButton
+            android:id="@+id/rd_post"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="72dp"
+            android:layout_gravity="bottom"
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:background="@mipmap/post"
+            android:button="@null" />
+        <RadioButton
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:id="@+id/rd_message"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/select_message"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50" />
+        <RadioButton
+            android:layout_marginLeft="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:layout_weight="1"
+            android:id="@+id/rd_mine"
+            android:button="@null"
+            android:gravity="center"
+            android:background="@drawable/select_mine"
+            android:layout_width="@dimen/dp_0"
+            android:layout_height="@dimen/dp_50" />
+    </RadioGroup>
+   <!-- <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipChildren="false"
+        xmlns:tools="http://schemas.android.com/tools">-->
+
+       <!-- <RelativeLayout
+            android:id="@+id/rl_vote_container"
+            android:layout_marginBottom="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:clipChildren="false"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/index_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_vote_whole"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/index_un"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_vote_whole"
+                    android:text="首页"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/friend_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_vote_sponsor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/friend_un"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_vote_sponsor"
+                    android:text="淘友"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/post_ll"
+                android:scaleType="centerCrop"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="75dp">
+                <ImageView
+                    android:id="@+id/iv_vote_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/post"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_vote_add"
+                    android:text="发布"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="bottom"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/message_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_vote_participant"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/message_un"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_vote_participant"
+                    android:text="消息"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mine_ll"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_vote_draft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:src="@mipmap/mine_un"
+                    android:layout_gravity="center_horizontal"
+                    />
+                <TextView
+                    android:id="@+id/tv_vote_draft"
+                    android:text="我的"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>-->
+</LinearLayout>

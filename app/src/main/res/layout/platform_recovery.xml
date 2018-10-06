@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16"
+            android:layout_marginTop="@dimen/dp_25"
+            android:text="手机数码回收"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/sp_20"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_16">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="免费寝室上门取件"
+                android:textColor="@color/tabtitle" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp_14"
+                android:text="保障隐私安全"
+                android:textColor="@color/tabtitle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_332">
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:id="@+id/phone_recovery"
+                android:layout_width="@dimen/dp_0"
+                android:layout_height="@dimen/dp_178"
+                android:layout_margin="@dimen/dp_1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/dp_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="手机回收" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/phone" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/pad_recovery"
+                android:layout_width="@dimen/dp_0"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp_1"
+                android:layout_toLeftOf="@id/notebook_recovery"
+                android:layout_toRightOf="@id/phone_recovery"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="平板回收" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/pad" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/notebook_recovery"
+                android:layout_width="@dimen/dp_0"
+                android:layout_weight="1"
+                android:layout_height="@dimen/dp_90"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/dp_1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:text="笔记本回收" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher_round" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_margin="@dimen/dp_10"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    <TextView
+        android:text="确定发布"
+        android:textColor="@color/colorwhite"
+        android:gravity="center"
+        android:textSize="@dimen/sp_18"
+        android:background="@color/tabtitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </RelativeLayout>
+ </RelativeLayout>
